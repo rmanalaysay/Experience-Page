@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="experience.css">
+    
+    <title>Skye Suites - Experience</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="experience-header">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg experience-navbar">
+            <div class="container">
+                <!-- Menu Dropdown -->
+                <div class="dropdown">
+                    <button class="btn experience-navbar__menu-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        MENU
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu experience-navbar__dropdown">
+                        <li><a class="dropdown-item experience-navbar__dropdown-item" href="index.html">
+                            <i class="bi bi-house-door"></i> Home
+                        </a></li>
+                        <li><a class="dropdown-item experience-navbar__dropdown-item" href="suites.html">
+                            <i class="bi bi-building"></i> Suites
+                        </a></li>
+                        <li><a class="dropdown-item experience-navbar__dropdown-item" href="dining.html">
+                            <i class="bi bi-cup-hot"></i> Dining
+                        </a></li>
+                        <li><a class="dropdown-item experience-navbar__dropdown-item" href="experience.html">
+                            <i class="bi bi-flower1"></i> Experience
+                        </a></li>
+                        <li><a class="dropdown-item experience-navbar__dropdown-item" href="access.html">
+                            <i class="bi bi-info-circle"></i> Access
+                        </a></li>
+                    </ul>
+                </div>
+
+                <!-- Book Now Button -->
+                <button class="btn experience-navbar__book-btn ms-auto" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                    BOOK NOW
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="container experience-header__showcase">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="experience-header__title">EXPERIENCE</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Wellness Section -->
+    <section class="experience-parallax experience-parallax--pool">
+        <img src="img/experience-pool-hero.jpg" alt="Luxury pool at Skye Suites" class="experience-parallax__image">
+    </section>
+
+    <section class="experience-wellness">
+        <div class="container">
+            <div class="experience-wellness__header">
+                <h3 class="experience-wellness__title">Wellness</h3>
+                <p class="experience-wellness__subtitle">
+                    <em>A place where you can immerse yourself in pure relaxation and beauty</em>
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="experience-card" data-bs-toggle="modal" data-bs-target="#massageModal">
+                        <div class="experience-card__image-wrapper">
+                            <img src="img/experience-massage-therapy.jpg" alt="Massage therapy at Skye Suites spa" class="experience-card__image">
+                            <div class="experience-card__overlay">
+                                <h4 class="experience-card__title">MASSAGE THERAPY</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4">
+                    <div class="experience-card" data-bs-toggle="modal" data-bs-target="#skincareModal">
+                        <div class="experience-card__image-wrapper">
+                            <img src="img/experience-skincare-treatment.jpg" alt="Skincare treatment at Skye Suites spa" class="experience-card__image">
+                            <div class="experience-card__overlay">
+                                <h4 class="experience-card__title">SKINCARE TREATMENT</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4">
+                    <div class="experience-card" data-bs-toggle="modal" data-bs-target="#thermalModal">
+                        <div class="experience-card__image-wrapper">
+                            <img src="img/experience-thermal-bath.jpg" alt="Thermal bath at Skye Suites spa" class="experience-card__image">
+                            <div class="experience-card__overlay">
+                                <h4 class="experience-card__title">THERMAL BATH</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adventure Section -->
+    <section class="experience-parallax experience-parallax--adventure">
+        <img src="img/experience-adventure-hero.jpg" alt="Adventure activities at Skye Suites" class="experience-parallax__image">
+    </section>
+
+    <section class="experience-adventure">
+        <div class="container">
+            <div class="experience-adventure__header">
+                <h3 class="experience-adventure__title">Adventure</h3>
+                <p class="experience-adventure__subtitle">
+                    <em>If thinking about it makes you excited, imagine actually doing it!</em>
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="experience-card" data-bs-toggle="modal" data-bs-target="#hikingModal">
+                        <div class="experience-card__image-wrapper">
+                            <img src="img/experience-hiking-trails.jpg" alt="Hiking trails near Skye Suites" class="experience-card__image">
+                            <div class="experience-card__overlay">
+                                <h4 class="experience-card__title">HIKING</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4">
+                    <div class="experience-card" data-bs-toggle="modal" data-bs-target="#kayakingModal">
+                        <div class="experience-card__image-wrapper">
+                            <img src="img/experience-kayaking-adventure.jpg" alt="Kayaking adventures at Skye Suites" class="experience-card__image">
+                            <div class="experience-card__overlay">
+                                <h4 class="experience-card__title">KAYAKING</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4">
+                    <div class="experience-card" data-bs-toggle="modal" data-bs-target="#bikingModal">
+                        <div class="experience-card__image-wrapper">
+                            <img src="img/experience-biking-trails.jpg" alt="Biking trails near Skye Suites" class="experience-card__image">
+                            <div class="experience-card__overlay">
+                                <h4 class="experience-card__title">BIKING</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="experience-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="experience-footer__section">
+                        <h5 class="experience-footer__title">Contact Us</h5>
+                        <ul class="experience-footer__list">
+                            <li class="experience-footer__item">
+                                <i class="fas fa-location-dot"></i>
+                                631 Douglas Mountains<br>
+                                New Mireilleshire Indiana USA
+                            </li>
+                            <li class="experience-footer__item">
+                                <i class="fas fa-phone"></i>
+                                204-663-3258
+                            </li>
+                            <li class="experience-footer__item">
+                                <i class="fas fa-envelope"></i>
+                                info@skyesuiteshotel.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4">
+                    <div class="experience-footer__section">
+                        <h5 class="experience-footer__title">Follow Us</h5>
+                        <div class="experience-footer__social">
+                            <i class="fab fa-facebook fa-2x"></i>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <i class="fab fa-pinterest fa-2x"></i>
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4">
+                    <div class="experience-footer__section">
+                        <h5 class="experience-footer__title">Subscribe to our newsletter</h5>
+                        <form class="experience-footer__form">
+                            <div class="input-group">
+                                <input type="email" class="form-control experience-footer__input" placeholder="Email address">
+                                <button class="btn experience-footer__submit-btn" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-lg experience-booking-modal">
+            <div class="modal-content">
+                <div class="modal-header experience-booking-modal__header">
+                    <h4 class="modal-title experience-booking-modal__title">HOTEL BOOKING</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body experience-booking-modal__body">
+                    <form>
+                        <h5 class="experience-booking-modal__section-title">CONTACT INFORMATION</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label experience-booking-modal__label">First Name</label>
+                                    <input type="text" class="form-control experience-booking-modal__input">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label experience-booking-modal__label">Last Name</label>
+                                    <input type="text" class="form-control experience-booking-modal__input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label experience-booking-modal__label">Phone</label>
+                                    <input type="tel" class="form-control experience-booking-modal__input">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label experience-booking-modal__label">Email</label>
+                                    <input type="email" class="form-control experience-booking-modal__input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="experience-booking-modal__section-title">BOOKING DETAILS</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label experience-booking-modal__label">Check-in</label>
+                                    <input type="datetime-local" class="form-control experience-booking-modal__input">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label experience-booking-modal__label">Check-out</label>
+                                    <input type="datetime-local" class="form-control experience-booking-modal__input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label experience-booking-modal__label">Adults</label>
+                                    <select class="form-select experience-booking-modal__select">
+                                        <option value="1">1 Adult</option>
+                                        <option value="2">2 Adults</option>
+                                        <option value="3">3 Adults</option>
+                                        <option value="4">4 Adults</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label experience-booking-modal__label">Children</label>
+                                    <select class="form-select experience-booking-modal__select">
+                                        <option value="0">0 Child</option>
+                                        <option value="1">1 Child</option>
+                                        <option value="2">2 Children</option>
+                                        <option value="3">3 Children</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label experience-booking-modal__label">Suite</label>
+                                    <select class="form-select experience-booking-modal__select">
+                                        <option value="silene-junior-suite">Silene Junior Suite</option>
+                                        <option value="lupine-junior-suite">Lupine Junior Suite</option>
+                                        <option value="silene-suite">Silene Suite</option>
+                                        <option value="lupine-suite">Lupine Suite</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label experience-booking-modal__label">Board</label>
+                                    <select class="form-select experience-booking-modal__select">
+                                        <option value="breakfast">Breakfast</option>
+                                        <option value="half-board">Half Board</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer experience-booking-modal__footer">
+                    <button type="button" class="btn experience-booking-modal__submit-btn">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activity Detail Modals -->
+    <div class="modal fade" id="massageModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content experience-detail-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title">Massage Therapy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Indulge in our therapeutic massage treatments designed to rejuvenate your body and mind. Our skilled therapists use premium oils and techniques to provide the ultimate relaxation experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add similar modals for other activities -->
+    <div class="modal fade" id="skincareModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content experience-detail-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title">Skincare Treatment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Revitalize your skin with our professional skincare treatments using premium products and advanced techniques for a radiant, healthy complexion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="thermalModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content experience-detail-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thermal Bath</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Soak in our therapeutic thermal baths with mineral-rich waters that promote healing, relaxation, and overall wellness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="hikingModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content experience-detail-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hiking</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Explore breathtaking trails and scenic landscapes on our guided hiking adventures. Perfect for all skill levels with stunning mountain views.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="kayakingModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content experience-detail-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kayaking</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Navigate pristine waters and discover hidden coves on our kayaking excursions. Equipment and professional guides provided for a safe adventure.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bikingModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content experience-detail-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title">Biking</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Cycle through scenic routes and forest trails on our mountain biking adventures. Bikes and safety equipment provided for all participants.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="experience.js"></script>
+</body>
+</html>

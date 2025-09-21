@@ -1,0 +1,664 @@
+/* Experience Page Styles using OCSS Methodology */
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+/* ========================================
+   EXPERIENCE HEADER
+   ======================================== */
+.experience-header {
+    min-height: 100vh;
+    background: #000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-header__showcase {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 150px);
+}
+
+.experience-header__title {
+    font-weight: bold;
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+/* ========================================
+   EXPERIENCE NAVBAR
+   ======================================== */
+.experience-navbar {
+    background: transparent !important;
+    padding-top: 50px;
+    border: none;
+    box-shadow: none;
+}
+
+.experience-navbar__menu-btn {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 25px;
+    padding: 12px 20px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.experience-navbar__menu-btn:hover,
+.experience-navbar__menu-btn:focus {
+    background-color: #f8f9fa;
+    color: #000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experience-navbar__book-btn {
+    background-color: #dc3545;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 25px;
+    padding: 12px 20px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.experience-navbar__book-btn:hover,
+.experience-navbar__book-btn:focus {
+    background-color: #c82333;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experience-navbar__dropdown {
+    background-color: #fff;
+    min-width: 300px;
+    border-radius: 8px;
+    padding: 30px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.experience-navbar__dropdown-item {
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 12px 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.experience-navbar__dropdown-item:hover,
+.experience-navbar__dropdown-item:focus {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* ========================================
+   EXPERIENCE PARALLAX
+   ======================================== */
+.experience-parallax {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-parallax__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+}
+
+.experience-parallax--pool {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.experience-parallax--adventure {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+/* ========================================
+   EXPERIENCE WELLNESS
+   ======================================== */
+.experience-wellness {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.experience-wellness__header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.experience-wellness__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.experience-wellness__subtitle {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    color: #fff;
+    margin: 0;
+}
+
+/* ========================================
+   EXPERIENCE ADVENTURE
+   ======================================== */
+.experience-adventure {
+    background-color: #fff;
+    color: #000;
+    padding: 80px 0;
+}
+
+.experience-adventure__header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.experience-adventure__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.experience-adventure__subtitle {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    color: #000;
+    margin: 0;
+}
+
+/* ========================================
+   EXPERIENCE CARD
+   ======================================== */
+.experience-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card__image-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.experience-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover .experience-card__image {
+    transform: scale(1.1);
+}
+
+.experience-card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 40px 20px 20px;
+    color: #fff;
+}
+
+.experience-card__title {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* ========================================
+   EXPERIENCE FOOTER
+   ======================================== */
+.experience-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0 40px;
+}
+
+.experience-footer__section {
+    margin-bottom: 30px;
+}
+
+.experience-footer__title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.experience-footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-footer__item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #fff;
+}
+
+.experience-footer__item i {
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.experience-footer__social {
+    display: flex;
+    gap: 15px;
+}
+
+.experience-footer__social i {
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.experience-footer__social i:hover {
+    color: #dc3545;
+    transform: scale(1.1);
+}
+
+.experience-footer__form {
+    margin-top: 20px;
+}
+
+.experience-footer__input {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 4px 0 0 4px;
+}
+
+.experience-footer__input:focus {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.experience-footer__input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.experience-footer__submit-btn {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #fff;
+    border-radius: 0 4px 4px 0;
+    padding: 0.375rem 1rem;
+    text-transform: uppercase;
+}
+
+.experience-footer__submit-btn:hover {
+    background-color: #f8f9fa;
+    color: #000;
+    border-color: #f8f9fa;
+}
+
+/* ========================================
+   EXPERIENCE BOOKING MODAL
+   ======================================== */
+.experience-booking-modal .modal-dialog {
+    max-width: 800px;
+}
+
+.experience-booking-modal__header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 20px 30px;
+}
+
+.experience-booking-modal__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.experience-booking-modal__body {
+    padding: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.experience-booking-modal__section-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000;
+    margin: 30px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.experience-booking-modal__section-title:first-child {
+    margin-top: 0;
+}
+
+.experience-booking-modal__label {
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experience-booking-modal__input,
+.experience-booking-modal__select {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+}
+
+.experience-booking-modal__input:focus,
+.experience-booking-modal__select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.experience-booking-modal__footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.experience-booking-modal__submit-btn {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.experience-booking-modal__submit-btn:hover {
+    background-color: #333;
+}
+
+/* ========================================
+   EXPERIENCE DETAIL MODAL
+   ======================================== */
+.experience-detail-modal .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.experience-detail-modal .modal-title {
+    font-weight: bold;
+    color: #000;
+}
+
+.experience-detail-modal .modal-body {
+    padding: 30px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+    .experience-header__title {
+        font-size: 3rem;
+        padding: 0 20px;
+    }
+    
+    .experience-header__showcase {
+        min-height: calc(100vh - 120px);
+    }
+    
+    .experience-navbar {
+        padding-top: 20px;
+    }
+    
+    .experience-navbar__menu-btn,
+    .experience-navbar__book-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .experience-wellness,
+    .experience-adventure {
+        padding: 60px 0;
+    }
+    
+    .experience-wellness__title,
+    .experience-adventure__title {
+        font-size: 2rem;
+    }
+    
+    .experience-wellness__subtitle,
+    .experience-adventure__subtitle {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+    
+    .experience-card__image-wrapper {
+        height: 250px;
+    }
+    
+    .experience-parallax {
+        height: 300px;
+    }
+    
+    .experience-footer {
+        padding: 40px 0 30px;
+        text-align: center;
+    }
+    
+    .experience-footer__social {
+        justify-content: center;
+    }
+    
+    .experience-booking-modal__title {
+        font-size: 1.5rem;
+    }
+    
+    .experience-booking-modal__body,
+    .experience-booking-modal__header,
+    .experience-booking-modal__footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .experience-header__title {
+        font-size: 2.5rem;
+    }
+    
+    .experience-header__showcase {
+        min-height: calc(100vh - 100px);
+    }
+    
+    .experience-navbar__dropdown {
+        min-width: 250px;
+        padding: 20px;
+    }
+    
+    .experience-wellness__title,
+    .experience-adventure__title {
+        font-size: 1.8rem;
+    }
+    
+    .experience-card__image-wrapper {
+        height: 200px;
+    }
+    
+    .experience-parallax {
+        height: 250px;
+    }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+.experience-text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.experience-hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.experience-hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+.experience-smooth-transition {
+    transition: all 0.3s ease;
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.experience-fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.experience-slide-in-left {
+    animation: slideInLeft 0.6s ease forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.experience-slide-in-right {
+    animation: slideInRight 0.6s ease forwards;
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+.experience-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.experience-focus-visible:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .experience-card {
+        border: 2px solid #000;
+    }
+    
+    .experience-navbar__menu-btn,
+    .experience-navbar__book-btn {
+        border: 2px solid #000;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .experience-card,
+    .experience-navbar__menu-btn,
+    .experience-navbar__book-btn,
+    .experience-footer__social i,
+    .experience-hover-lift,
+    .experience-smooth-transition {
+        transition: none;
+    }
+    
+    .experience-fade-in-up,
+    .experience-slide-in-left,
+    .experience-slide-in-right {
+        animation: none;
+    }
+    
+    .experience-parallax__image {
+        transform: none !important;
+    }
+}
